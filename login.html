@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Halaman Login</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        /* Pastikan nama file gambar dan path-nya benar */
+        background-image: url("img/bg-blur.jpg"); /* Ganti dengan nama file gambar Anda */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .login-card {
+        width: 100%;
+        max-width: 400px;
+        padding: 2.5rem;
+        border-radius: 10px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        background-color: rgba(255, 255, 255, 0.9);
+      }
+
+      /* CSS Kustom untuk Tombol Gradasi */
+      .btn-gradient-green {
+        background-image: linear-gradient(
+          to right,
+          #28a745,
+          #1e7e34 /* #4c938f,
+          #4a6b7c */
+        ); /* Gradasi dari hijau Bootstrap ke hijau lebih gelap */
+        border: none; /* Hilangkan border default Bootstrap */
+        color: white; /* Pastikan teks tetap putih */
+        font-weight: bold;
+        transition: all 0.3s ease; /* Efek transisi saat hover */
+      }
+      .btn-gradient-green:hover {
+        background-image: linear-gradient(
+          to right,
+          #1e7e34,
+          #28a745
+        ); /* Balikkan gradasi saat hover */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Tambah bayangan saat hover */
+      }
+      /* Jika ingin gradasi lebih sesuai gambar: */
+      .btn-custom-gradient {
+        background: linear-gradient(
+          to right,
+          /* #20c997,  #17a2b8 */ #4c938f,
+          #4a6b7c
+        ); /* Contoh gradasi turquoise ke biru kehijauan */
+        border: none;
+        /* color: white; */
+        color: #d4d4d4;
+
+        font-weight: bold;
+        transition: all 0.3s ease;
+      }
+      .btn-custom-gradient:hover {
+        background: linear-gradient(to right, #17a2b8, #20c997);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        /* color: #ECECBB; Tambahkan baris ini untuk mengubah warna teks */
+        color: #ffffff; /* Tambahkan baris ini untuk mengubah warna teks */
+      }
+
+      /* CSS Kustom untuk Link */
+      .login-card a {
+        color: #239ba7;
+        /* color: #007bff; */
+        /* color: #da5c53; */
+        text-decoration: none; /* Menghilangkan garis bawah */
+        font-weight: 500; /* Sedikit lebih tebal dari teks biasa */
+      }
+
+      .login-card a:hover {
+        /* color: #007bff;  */
+        color: #da5c53;
+        text-decoration: underline; /* Munculkan garis bawah saat hover (opsional) */
+      }
+
+      /*css utk btn ahref*/
+      .login-card a.btn-login {
+        color: #d4d4d4;
+        text-decoration: none; /* Menghilangkan garis bawah */
+        font-weight: 500; /* Sedikit lebih tebal dari teks biasa */
+      }
+      .login-card a.btn-login:hover {
+        color: #ffffff;
+        text-decoration: none; /* Menghilangkan garis bawah */
+        font-weight: 500; /* Sedikit lebih tebal dari teks biasa */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card login-card">
+      <div class="card-body">
+        <h3 class="card-title text-center mb-4 fw-bold">Login Akun Anda</h3>
+
+        <form>
+          <div class="mb-3 input-group">
+            <span class="input-group-text"><i class="fas fa-user"></i></span>
+            <input
+              type="text"
+              class="form-control"
+              id="username"
+              placeholder="Username atau Email"
+              aria-label="Username"
+            />
+          </div>
+
+          <div class="mb-3 input-group">
+            <span class="input-group-text"><i class="fas fa-lock"></i></span>
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              placeholder="Kata Sandi"
+              aria-label="Kata Sandi"
+            />
+          </div>
+
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="rememberMe" />
+              <label class="form-check-label" for="rememberMe">
+                Ingat Saya
+              </label>
+            </div>
+            <a href="#" class="text-decoration-none">Lupa Kata Sandi?</a>
+          </div>
+
+          <!-- <button type="submit" class="btn btn-custom-gradient w-100 fw-bold">
+            Masuk
+          </button> -->
+          <a
+            href="dashboard.html"
+            class="btn btn-custom-gradient btn-login w-100 fw-bold"
+          >
+            <i class="fas fa-search"></i> Masuk
+          </a>
+        </form>
+
+        <div class="mt-4 text-center">
+          <p class="mb-0">
+            Belum punya akun?
+            <a href="#" class="text-decoration-none fw-bold"
+              >Daftar sekarang.</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+# Dependencies Node.js (Wajib diabaikan jika Anda menggunakan NPM/Yarn)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Cache build tools seperti Parcel, Webpack, dll.
+dist/
+build/
+.cache/
+
+# File konfigurasi IDE lokal (seperti VS Code)
+.vscode/
+
+# Files log atau backup
+*.log
+*~
+
+#misc
+misc/
